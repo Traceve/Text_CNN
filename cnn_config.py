@@ -22,9 +22,9 @@ class TCNNConfig(object):
     save_per_batch = 10  # 每多少轮存入tensorboard
 
     def __init__(self, data_base_dir, category_type):
-        self.train_dir = os.path.join(data_base_dir, 'train2.txt')
-        self.test_dir = os.path.join(data_base_dir, 'test2.txt')
-        self.val_dir = os.path.join(data_base_dir, 'val2.txt')
+        self.train_dir = os.path.join(data_base_dir, 'train.txt')
+        self.test_dir = os.path.join(data_base_dir, 'test.txt')
+        self.val_dir = os.path.join(data_base_dir, 'val.txt')
         self.vocab_dir = os.path.join(data_base_dir, 'vocab.txt')
         self.vector_word_npz = os.path.join(data_base_dir, 'vector_word.npz')
         self.vector_word_filename = os.path.join(data_base_dir, 'Tencent_AILab_ChineseEmbedding.txt')
